@@ -1,0 +1,87 @@
+/* - White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(212, 45%, 89%);
+  --GrayishBlue: hsl(220, 15%, 55%);
+  --darkBlue: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: var(--lightGray);
+  /* border: 1px solid red; */
+  padding: 5rem 2rem 0px 2rem;
+}
+
+.card {
+  /* border: 1px solid red; */
+  width: 250px;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.card--picture {
+  border-radius: 10px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.card--picture img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -4px;
+}
+
+.card--context {
+  /* border: 1px solid red; */
+  margin-top: 1.5rem;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.title {
+  /* border: 1px solid blue; */
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--darkBlue);
+  font-size: 22px;
+}
+
+.description {
+  /* border: 1px solid green; */
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--GrayishBlue);
+  margin-bottom: 1.75rem;
+  padding: 0 1rem;
+}
+
+.footer {
+  width: 200px;
+  margin: 3rem auto;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  color: var(--darkBlue);
+  font-size: 14px;
+}
+
+/* responsive */
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 300px;
+    /* background-color: blue; */
+  }
+}
